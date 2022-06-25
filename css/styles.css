@@ -1,0 +1,280 @@
+.listaRedes{
+    list-style: none;
+}
+
+.listaRedes li{
+    display: inline-block;
+}
+
+.carousel-inner{
+    max-height: 40rem;
+}
+
+.footer{
+    text-align: center;
+    background-color:#75a4b1;
+    color: white;
+    font-size: 1rem;
+}
+
+/********************************************************************************************************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: rgb(74, 74, 153) ;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 500px;
+    background: #360033;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0b88939d, #36003393), url(../img/slide6.jpg);   
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0b88939d, #36003393), url(../img/slide6.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    color: #fff;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+
+header .textos-header{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*----------------------------------------------------------- Sobre Nosotros  ------------------------------------------------------------------*/
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-sobre-nosotros{
+    width: 50%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 50%;
+}
+
+.contenido-textos{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #3b8597;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    padding: 0.2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+
+/* ---------------------------------- Galeria ---------------------------------------------------*/
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(182, 44%, 34%, 0.6);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+
+
+/*-----------------------------------------------------  Clientes  ------------------------------------------------------*/
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: rgb(14, 72, 95);
+    display: flex;
+    width: 30%;
+    height: 350px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.cards .card img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 200;
+    padding-top: 3px;
+}
+
+
+
+/*-------------------------------------------------------  Nuestros servicios ----------------------------------------------------------*/
+
+.nuestros-servicios{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+
+.servicios-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+
+
+/*------------------------------------------------------------- Footer ----------------------------------------------------------*/
+.footer{
+    background: #6e6d6d;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+
+
